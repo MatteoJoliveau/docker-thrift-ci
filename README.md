@@ -1,10 +1,10 @@
-# Thrift CI
-Docker image to use the Apache Thrift compiler in Docker-based CI environment.
+# Thrift Docker Images
 
-Use it as a base for your images
+This is a set of custom Docker images for using [Apache Thrift](https://thrift.apache.org) in Docker, especially
+for usage inside Docker-based CI environment to build Thrift definitions during pipeline executions.
 
-```Dockerfile
-FROM matteojoliveau/thrift-ci
+## Content
+- `thrift-ci`: the base image with prebuilt `thrift` executable
+- `java-thrift`: for building Java applications that use Thrift
 
-# Your Dockerfile
-```
+All images are available on [Docker Hub](https://hub.docker.com/r/matteojoliveau)
